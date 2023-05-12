@@ -1,12 +1,12 @@
 import React from "react";
-import Navigation from './components/Navigation';
+import Navigation from './Navigation';
 
-function Header() {
+function Header(props) {
   return (
     <div className="header-container">
         <Navigation />
         <div className="banner">
-            <h1>Portfolio Header</h1>
+            <h1>Portfolio Header {props.taco}</h1>
         </div>
     </div>
   );

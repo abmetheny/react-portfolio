@@ -1,9 +1,17 @@
 import React from "react";
+import { FaGithub } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
+import { FaStackOverflow } from 'react-icons/fa';
+
 
 function Footer() {
   return (
-    <div className="contact-container">
-        <p>Made possible by viewers like you.</p>
+    <div className="footer-container">
+        <div>
+          <a href="https://github.com/abmetheny"><FaGithub /></a>
+          <a href="https://www.linkedin.com/in/amy-metheny-8b1177276/"><FaLinkedin /></a>          
+          <a href="https://stackoverflow.com/users/21890121/amy"><FaStackOverflow /></a>
+        </div>
     </div>
   );
 }
