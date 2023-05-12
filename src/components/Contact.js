@@ -1,11 +1,11 @@
 import React from "react";
 
-function Footer() {
+function Contact() {
   return (
     <div className="contact-container">
-        <p>Made possible by viewers like you.</p>
+        <p>Contact me.</p>
     </div>
   );
 }
 
-export default Footer;
+export default Contact;
