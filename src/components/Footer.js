@@ -1,8 +1,5 @@
 import React from "react";
-import { FaGithub } from 'react-icons/fa';
-import { FaLinkedin } from 'react-icons/fa';
-import { FaStackOverflow } from 'react-icons/fa';
-
+import { FaGithub, FaLinkedin, FaStackOverflow } from 'react-icons/fa';
 
 function Footer() {
   return (

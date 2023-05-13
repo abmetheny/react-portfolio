@@ -1,26 +1,58 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import { AppstoreOutlined, UserOutlined, NotificationOutlined, FileDoneOutlined } from '@ant-design/icons';
+import type { MenuProps } from 'antd';
+import { Menu } from 'antd';
 
-// Here we are using object destructuring assignment to pluck off our variables from the props object
-// We assign them to their own variable names
-function Navigation({ currentPage, handlePageChange }) {
-  return (
-    <nav>
-    <ul>
-      <li>
-        <Link to="/portfolio">Portfolio</Link>
-      </li>
-      <li>
-        <Link to="/about">About</Link>
-      </li>
-      <li>
-        <Link to="/contact">Contact</Link>
-      </li>
-      <li>
-        <Link to="/resume">Resume</Link>
-      </li>
-    </ul>
-  </nav>
+function Navigation() {
+  const items = [
+    {
+      label: (<Link to="/">About</Link>),
+      key: 'about',
+      icon: <UserOutlined />
+    },
+    {
+      label: (<Link to="/portfolio">Portfolio</Link>),
+      key: 'portfolio',
+      icon: <AppstoreOutlined />
+    },
+    {
+      label: (<Link to="/contact">Contact</Link>),
+      key: 'contact',
+      icon: <NotificationOutlined />
+    },
+    {
+      label: (<Link to="/resume">Resume</Link>),
+      key: 'resume',
+      icon: <FileDoneOutlined />
+    },
+  ];
+
+  return <Menu mode="horizontal" items={items} />;
+
+
+  //   <nav>
+  //   <Menu>
+  //     <li>
+  //       <Link to="/portfolio">Portfolio</Link>
+  //     </li>
+  //     <li>
+  //       <Link to="/about">About</Link>
+  //     </li>
+  //     <li>
+  //       <Link to="/contact">Contact</Link>
+  //     </li>
+  //     <li>
+  //       <Link to="/resume">Resume</Link>
+  //     </li>
+  //   </Menu>
+  // </nav>
+
+    
+
+
+
+
 
     // <ul className="nav nav-tabs">
     //   <li className="nav-item">
@@ -65,7 +97,6 @@ function Navigation({ currentPage, handlePageChange }) {
     //     </a>
     //   </li>
     // </ul>
-  );
 }
 
 export default Navigation;
