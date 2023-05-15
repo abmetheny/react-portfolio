@@ -8,18 +8,11 @@ import Footer from "./components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-
-  const styleSheet = {
-    peanut: {backgroundColor: "purple"}
-  }
-
-
-
   return (
     <Router>
       <div className="page-container">
         <div className="header-container">
-          <Header taco="burrito" />
+          <Header />
         </div>
 
         <Routes>

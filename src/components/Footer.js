@@ -1,14 +1,26 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaStackOverflow } from 'react-icons/fa';
+import { Card } from 'antd';
+
+const style = {
+  fontSize: '30px',
+  padding: '0 10px'
+};
 
 function Footer() {
   return (
     <div className="footer-container">
-        <div>
-          <a href="https://github.com/abmetheny"><FaGithub /></a>
-          <a href="https://www.linkedin.com/in/amy-metheny-8b1177276/"><FaLinkedin /></a>          
-          <a href="https://stackoverflow.com/users/21890121/amy"><FaStackOverflow /></a>
-        </div>
+      <Card
+        style={{
+          width: "100%",
+          textAlign: "center",
+          background: 'lightblue'
+        }}
+      >
+        <a style={style} href="https://github.com/abmetheny"><FaGithub /></a>
+        <a style={style} href="https://www.linkedin.com/in/amy-metheny-8b1177276/"><FaLinkedin /></a>          
+        <a style={style} href="https://stackoverflow.com/users/21890121/amy"><FaStackOverflow /></a>
+      </Card>
     </div>
   );
 }
