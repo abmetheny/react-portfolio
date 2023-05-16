@@ -5,7 +5,9 @@ import { Divider, Row } from 'antd';
 function Portfolio() {
   return (
     <div className="portfolio-container">
-      <p>A sample of projects completed over the last few months.  For a full list of projects and repositories, visit my <a href="https://github.com/abmetheny">GitHub</a> page.</p>
+      <Row style={{display: 'flex', justifyContent: 'center'}}>
+        <p>A sample of projects completed over the last few months.  For a full list of projects and repositories, visit my <a href="https://github.com/abmetheny">GitHub</a> page.</p>
+      </Row>
 
       <div className="project-container">
         <Divider orientation="left">Collaborative Projects</Divider>

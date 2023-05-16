@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Form, Input } from 'antd';
+import { Button, Form, Input, Card } from 'antd';
 
 const onFinish = (values) => {
   console.log('Success:', values);
@@ -8,12 +8,11 @@ const onFinishFailed = (errorInfo) => {
   console.log('Failed:', errorInfo);
 };
 
-
-
 function Contact() {
   return (
-    <div style={{margin: '10px'}}>
-      <Form
+    <div style={{margin: '10px 200px 30px 200px'}}>
+      <Card style={{textAlign: 'center'}} title="Get in touch!">
+      <Form 
       name="basic"
       labelCol={{
         span: 8,
@@ -83,6 +82,7 @@ function Contact() {
         </Button>
       </Form.Item>
     </Form>
+      </Card>
   </div>
   );
 }

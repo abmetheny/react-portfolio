@@ -5,7 +5,7 @@ import { TbBrandJavascript } from "react-icons/tb";
 import { DiJqueryUiLogo, DiResponsive, DiMysql, DiMongodb } from "react-icons/di";
 import { AiOutlineApi } from "react-icons/ai";
 import { SiGraphql } from "react-icons/si";
-import { Card, Button } from 'antd';
+import { Card, Button, Row } from 'antd';
 
 const style = {
   div: {
@@ -21,6 +21,14 @@ const style = {
   card: {
     background: 'lightgray',
     marginTop: '20px',
+  },
+  front: {
+    display: 'flex', 
+    justifyContent: 'center', 
+    margin: '10px 200px 30px 200px', 
+    textAlign: 'center', 
+    fontWeight: 'bold', 
+    fontSize: '1.2vw'
   }
 };
 
@@ -28,9 +36,13 @@ function Resume() {
   return (
     <div className="resume-container">
 
-      <Button style={{margin: '35px 0 20px 0'}} type="default" block size={"large"}>
-        <a href={require("../assets/resume.pdf")} download="ametheny_resume">Download My Resume</a>
-      </Button>
+      <Row style={style.front}>
+        <p>As a full-stack web developer, I am proficient in both front- and back-end technologies and frameworks.  See below for an overview, or download my resume for a full list of my working experience.</p>
+        <Button type="default" block size={"large"}>
+          <a href={require("../assets/resume.pdf")} download="ametheny_resume">Download My Resume</a>
+        </Button>
+      </Row>
+
 
       <Card style={style.card} headStyle={style.title} title="Front-End Proficiencies">
         <div style={style.div} >

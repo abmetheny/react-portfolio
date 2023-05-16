@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+    <Router >
       <div style={{margin: '15px 75px'}} className="page-container">
         <div className="header-container">
           <Header />
