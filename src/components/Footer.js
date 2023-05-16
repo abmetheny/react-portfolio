@@ -4,7 +4,8 @@ import { Card } from 'antd';
 
 const style = {
   fontSize: '30px',
-  padding: '0 10px'
+  padding: '0 10px',
+  color: '#ffe6eb',
 };
 
 function Footer() {
@@ -15,6 +16,7 @@ function Footer() {
         style={{
           width: "100%",
           textAlign: "center",
+          background: '#1d2786',
         }}
       >
         <a style={style} href="https://github.com/abmetheny"><FaGithub /></a>
