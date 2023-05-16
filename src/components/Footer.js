@@ -9,12 +9,12 @@ const style = {
 
 function Footer() {
   return (
-    <div className="footer-container">
+    <div style={{marginTop: '50px'}} className="footer-container">
       <Card
+        bordered={false}
         style={{
           width: "100%",
           textAlign: "center",
-          background: 'lightblue'
         }}
       >
         <a style={style} href="https://github.com/abmetheny"><FaGithub /></a>

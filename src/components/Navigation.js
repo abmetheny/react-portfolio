@@ -5,7 +5,23 @@ import type { MenuProps } from 'antd';
 import { Menu } from 'antd';
 
 function Navigation() {
+  const style = {
+    logo: {
+      height: '48px',
+      width: 'auto',
+    },
+    row: {
+      width: '100%'
+    },
+  };
+
   const items = [
+    {
+      label: (<Link to="/"></Link>),
+      key: 'home',
+      icon: <img style={style.logo} src={require("../images/logo.png")} alt="Profile"></img>,
+      disabled: true
+    },
     {
       label: (<Link to="/">About</Link>),
       key: 'about',
@@ -28,7 +44,7 @@ function Navigation() {
     },
   ];
 
-  return <Menu mode="horizontal" items={items} />;
+  return <Menu style={style.row} mode="horizontal" items={items} />;
 
 
   //   <nav>
