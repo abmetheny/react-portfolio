@@ -17,18 +17,21 @@ const style = {
     background: '#1d2786', 
     color: '#ffe6eb', 
     fontSize: 'x-large',
+    width: '100%',
   },
   card: {
     background: 'lightgray',
     marginTop: '20px',
+    display: 'flex',
+    flexWrap: 'wrap'
   },
   front: {
     display: 'flex', 
     justifyContent: 'center', 
-    margin: '10px 200px 30px 200px', 
+    margin: '10px 5vw 30px 5vw', 
     textAlign: 'center', 
     fontWeight: 'bold', 
-    fontSize: '1.2vw'
+    fontSize: 'max(1.2vw, 12px)'
   }
 };
 

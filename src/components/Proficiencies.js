@@ -3,6 +3,7 @@ import { Card } from 'antd';
 
 const gridStyle = {
   width: '30%',
+  minWidth: '250px',
   textAlign: 'center',
   margin: '10px 0',
   background: '#ffb3c2',

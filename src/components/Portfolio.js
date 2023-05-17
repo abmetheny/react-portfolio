@@ -4,13 +4,13 @@ import { Divider, Row } from 'antd';
 
 function Portfolio() {
   return (
-    <div className="portfolio-container">
+    <div className="portfolio-container" style={{marginTop: '20px'}}>
       <Row style={{display: 'flex', justifyContent: 'center'}}>
         <p>A sample of projects completed over the last few months.  For a full list of projects and repositories, visit my <a href="https://github.com/abmetheny">GitHub</a> page.</p>
       </Row>
 
       <div className="project-container">
-        <Divider orientation="left">Collaborative Projects</Divider>
+        <Divider orientation="left" style={{fontSize: 'x-large'}}>Collaborative Projects</Divider>
         <Row gutter={{xs: 8, sm: 16, md: 24, lg: 32}}>
           <Project 
             name="Trip Planning of the Future"
@@ -28,7 +28,7 @@ function Portfolio() {
           />
         </Row>
 
-        <Divider orientation="left">Full Stack Projects</Divider>
+        <Divider orientation="left" style={{fontSize: 'x-large'}}>Full Stack Projects</Divider>
         <Row gutter={{xs: 8, sm: 16, md: 24, lg: 32}}>
           <Project 
             name="CMS Tech Blog"
@@ -46,7 +46,7 @@ function Portfolio() {
           />
         </Row>
         
-        <Divider orientation="left">Back End Projects</Divider>
+        <Divider orientation="left" style={{fontSize: 'x-large'}}>Back End Projects</Divider>
         <Row gutter={{xs: 8, sm: 16, md: 24, lg: 32}}>
           <Project 
             name="Social Media Network API"

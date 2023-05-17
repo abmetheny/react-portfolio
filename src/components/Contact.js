@@ -10,18 +10,18 @@ const onFinishFailed = (errorInfo) => {
 
 function Contact() {
   return (
-    <div style={{margin: '10px 200px 30px 200px'}}>
-      <Card style={{textAlign: 'center'}} title="Get in touch!">
+    <div style={{margin: '30px 0 30px 0'}}>
+      <Card style={{textAlign: 'center', display: 'flex', flexWrap: 'wrap', background: '#ffe6eb'}} headStyle={{width: '100%', fontSize: '2vw'}} bodyStyle={{width: '100%'}} title="Get in touch!">
       <Form 
       name="basic"
       labelCol={{
-        span: 8,
+        span: 9,
       }}
       wrapperCol={{
         span: 16,
       }}
       style={{
-        maxWidth: 600,
+        width: '75%',
       }}
       initialValues={{
         remember: true,
@@ -45,7 +45,7 @@ function Contact() {
       </Form.Item>
 
       <Form.Item
-        label="Email Address"
+        label="Email"
         name="email"
         rules={[
           {
@@ -64,7 +64,7 @@ function Contact() {
           rules={[
             { 
               required: true, 
-              message: 'Please input message.' 
+              message: 'Please input message!' 
             }
           ]}
         >
