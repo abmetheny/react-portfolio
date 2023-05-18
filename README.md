@@ -2,7 +2,7 @@
 Web developer showcase for previous work using React to create a single-page portfolio application.
 
 ## Link to Deployed App
-[Amy Metheny React Portfolio](https://radiant-ocean-25023.herokuapp.com/)
+[Amy Metheny React Portfolio](https://abmetheny.github.io/react-portfolio/#/)
 
 ## Overview
 * Entirely client-side application
