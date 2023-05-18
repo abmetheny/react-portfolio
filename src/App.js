@@ -4,7 +4,7 @@ import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 //Defines all routes and displays Header and Footer on every page
 function App() {
