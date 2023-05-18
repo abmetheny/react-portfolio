@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/react-portfolio/static/js/main.dc8c40a9.js",
+    "static/media/work-3.png": "/react-portfolio/static/media/work-3.a3de96354899fd242c33.png",
+    "static/media/work-4.png": "/react-portfolio/static/media/work-4.fead32ad1c9c1da95dd7.png",
+    "static/media/profile-pic2.jpg": "/react-portfolio/static/media/profile-pic2.1b3419f784e8177b6fe6.jpg",
+    "static/media/resume.pdf": "/react-portfolio/static/media/resume.25cdd721be1ba4e49879.pdf",
+    "static/media/social-network.png": "/react-portfolio/static/media/social-network.08fac678e2496157cda9.png",
+    "static/media/logo.png": "/react-portfolio/static/media/logo.ec51478003e82cd16178.png",
+    "static/media/note-taker.jpg": "/react-portfolio/static/media/note-taker.77208e493f674feeb919.jpg",
+    "static/media/tech-blog.png": "/react-portfolio/static/media/tech-blog.30a88f88f4b96ec75288.png",
+    "static/media/ecommerce.png": "/react-portfolio/static/media/ecommerce.5995e3b518fe85f36010.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.dc8c40a9.js.map": "/react-portfolio/static/js/main.dc8c40a9.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.dc8c40a9.js"
+  ]
+}
