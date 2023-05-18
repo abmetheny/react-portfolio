@@ -1,4 +1,3 @@
-// import './App.css';
 import Header from "./components/Header";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -7,6 +6,7 @@ import Portfolio from "./components/Portfolio";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+//Defines all routes and displays Header and Footer on every page
 function App() {
   return (
     <Router >

@@ -1,19 +1,30 @@
 import React from "react";
 import { Button, Form, Input, Card } from 'antd';
 
-const onFinish = (values) => {
-  console.log('Success:', values);
-};
-const onFinishFailed = (errorInfo) => {
-  console.log('Failed:', errorInfo);
-};
-
+//Populates the Contact page
 function Contact() {
+  const [form] = Form.useForm();
+  const onFinish = (values) => {
+    console.log('Success:', values);
+    form.resetFields();
+  };
+  const onFinishFailed = (errorInfo) => {
+    console.log('Failed:', errorInfo);
+  };
+  // const handleBlur = (e) => {
+  //   console.log("handling blur", e.target.value);
+  //   if (e.target.value === '') {
+  //     console.log('error')
+  //   }
+  // };
+  // const handleFocus = (e) => {
+  //   console.log("handling focus", e.target.value);
+  // };
   return (
     <div style={{margin: '30px 0 30px 0'}}>
       <Card style={{textAlign: 'center', display: 'flex', flexWrap: 'wrap', background: '#ffe6eb'}} headStyle={{width: '100%', fontSize: '2vw'}} bodyStyle={{width: '100%'}} title="Get in touch!">
       <Form 
-      name="basic"
+      name="contact"
       labelCol={{
         span: 9,
       }}
@@ -29,46 +40,65 @@ function Contact() {
       onFinish={onFinish}
       onFinishFailed={onFinishFailed}
       autoComplete="off"
+      form={form}
     >
       <Form.Item
         type="input"
         label="Name"
         name="name"
+        validateTrigger="onBlur"
         rules={[
           {
             required: true,
-            message: 'Please input your name!',
+            message: 'Please provide your name.',
           },
         ]}
       >
-        <Input />
+        <Input 
+          placeholder="Name"
+          // onBlur={handleBlur}
+          // onFocus={handleFocus}
+        />
       </Form.Item>
 
       <Form.Item
         label="Email"
         name="email"
+        validateTrigger="onBlur"
         rules={[
           {
             required: true,
-            pattern: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-            message: 'Please input a valid email address!',
+            message: 'Please provide your email address.',
           },
+          {
+            type: 'email',
+            message: 'Please enter a valid email address.'
+          }
         ]}
       >
-        <Input />
+        <Input 
+          placeholder="Email"
+          // onBlur={handleBlur}
+          // onFocus={handleFocus}
+        />
       </Form.Item>
 
       <Form.Item
           name="message"
           label="Message"
+          validateTrigger="onBlur"
           rules={[
             { 
               required: true, 
-              message: 'Please input message!' 
+              message: 'Please provide a message.' 
             }
           ]}
         >
-          <Input.TextArea rows={4} />
+          <Input.TextArea rows={4} 
+            placeholder="Leave a message..."
+            // onBlur={handleBlur}
+            // onFocus={handleFocus}
+          />
         </Form.Item>
 
       <Form.Item

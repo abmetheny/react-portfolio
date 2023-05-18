@@ -6,6 +6,7 @@ const style = {
   height: '100%', 
 };
 
+//Returns About section
 function About() {
   return (
     <div style={{marginTop: '50px'}} className="about-container">

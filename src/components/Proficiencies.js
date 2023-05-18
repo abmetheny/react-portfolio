@@ -9,6 +9,7 @@ const gridStyle = {
   background: '#ffb3c2',
 };
 
+//Populates the skill cards displayed on the Resume page
 function Proficiencies(props) {
   return (
     <Card.Grid hoverable={false} style={gridStyle}>

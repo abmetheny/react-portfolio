@@ -2,6 +2,7 @@ import React from "react";
 import Project from "./Project";
 import { Divider, Row } from 'antd';
 
+//Holds and populates the projects from the Project.js file using props
 function Portfolio() {
   return (
     <div className="portfolio-container" style={{marginTop: '20px'}}>

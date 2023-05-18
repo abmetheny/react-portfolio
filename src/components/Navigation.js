@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { AppstoreOutlined, UserOutlined, NotificationOutlined, FileDoneOutlined } from '@ant-design/icons';
-import type { MenuProps } from 'antd';
 import { Menu } from 'antd';
 
 function Navigation() {

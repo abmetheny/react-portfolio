@@ -8,6 +8,7 @@ const style = {
   color: '#ffe6eb',
 };
 
+//Populates the page footer
 function Footer() {
   return (
     <div style={{marginTop: '50px'}} className="footer-container">

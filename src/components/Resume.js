@@ -35,6 +35,7 @@ const style = {
   }
 };
 
+//Displays download resume option and passes props to the Proficiencies.js file
 function Resume() {
   return (
     <div className="resume-container">
@@ -45,7 +46,6 @@ function Resume() {
           <a href={require("../assets/resume.pdf")} download="ametheny_resume">Download My Resume</a>
         </Button>
       </Row>
-
 
       <Card style={style.card} headStyle={style.title} title="Front-End Proficiencies">
         <div style={style.div} >
